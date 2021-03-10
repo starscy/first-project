@@ -1,0 +1,29 @@
+.text {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-family: Lato;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1138px;
+  margin: 0 auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
