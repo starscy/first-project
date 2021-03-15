@@ -1,0 +1,40 @@
+.header_navigation {
+  display: none;
+  position: relative;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  max-width: 262px;
+  margin: 0 0 0 auto;
+  display: none;
+}
+
+.navigation_close {
+  border: none;
+  background-color: var(--white);
+  align-self: flex-end;
+}
+
+.navigation_title {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  margin: 0 0 24px 0;
+}
+
+.navigation_text {
+  font-size: 14px;
+  line-height: 17px;
+  color: #6f6e6e;
+  margin: 10px 11px;
+}
+
+.navigation_text:hover {
+  color: var(--dark-pink);
+}
+
+.navigation_list + .navigation_list {
+  margin: 20px 0 0 0;
+}
