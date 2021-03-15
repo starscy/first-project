@@ -1,8 +1,10 @@
-.text {
+body {
   font-family: Lato;
   font-style: normal;
   font-weight: normal;
-  font-family: Lato;
+}
+
+.text {
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 0;
@@ -10,11 +12,6 @@
 
 a {
   text-decoration: none;
-}
-
-.container {
-  width: 1138px;
-  margin: 0 auto;
 }
 
 .visually-hidden {
@@ -26,4 +23,8 @@ a {
   overflow: hidden;
   border: 0;
   clip: rect(0 0 0 0);
+}
+
+.red {
+  color: #f16d7f;
 }

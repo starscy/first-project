@@ -1,0 +1,36 @@
+.attract {
+  background-color: $black;
+}
+
+.attract_list {
+  display: flex;
+
+  @include tablet {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.attract_item {
+  width: 360px;
+  height: 134px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 2px;
+}
+
+.attract_title {
+  font-size: 19.96px;
+  line-height: 24px;
+  color: $white;
+}
+
+.attract_text {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: $white;
+  text-align: center;
+}
