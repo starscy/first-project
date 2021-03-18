@@ -8,6 +8,7 @@
 @import "./blocks/offers";
 @import "./blocks/products";
 @import "./blocks/_attract";
+//@import "./_bootstrap";
 
 .container {
   width: 71%;
@@ -128,6 +129,12 @@
   padding: 6px 22px;
   border-top-right-radius: 22px;
   border-bottom-right-radius: 22px;
+}
+
+.subscribe_button:hover {
+  background-color: $white;
+  color: $dark-pink;
+  cursor: pointer;
 }
 
 .footer {
@@ -352,6 +359,10 @@
 .card-description {
   padding: 22px 31px;
   width: 59%;
+
+  @include mobile {
+    padding: 5px 5px;
+  }
 }
 
 .card-description_top {
@@ -380,13 +391,19 @@
 }
 
 .cart_button {
+  margin: 20px 0 0 0;
   text-transform: uppercase;
-  width: 235px;
-  padding: 17px 39px;
+  width: 225px;
+  padding: 10px 15px;
   font-weight: 300;
-  font-size: 14px;
-  line-height: 17px;
-  border: 1px solid #a4a4a4;
+
+  border: 1px solid $brown;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 13px;
+  background-color: $white;
+  color: $black;
+  text-decoration: none;
 }
 
 .buttons {
@@ -414,7 +431,6 @@
   flex-direction: column;
   justify-content: space-between;
   min-height: 272px;
-  width: 44%;
 
   @include mobile {
     width: 100%;
@@ -437,7 +453,7 @@
   margin: 57px 0 0 0;
   background-color: #f5f3f3;
   padding: 39px 34px;
-  width: 44%;
+
   align-self: center;
 
   @include mobile {

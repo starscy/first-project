@@ -2,6 +2,10 @@
   background-color: $dark-blue;
 }
 
+.logo:hover {
+  transform: scale(1.2);
+}
+
 .header_controls {
   fill: $white;
 }
@@ -25,6 +29,7 @@
   background-color: transparent;
   border: none;
   margin: 0 34px 0 0;
+  cursor: pointer;
 }
 
 .header_person-link {

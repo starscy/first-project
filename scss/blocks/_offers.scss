@@ -27,19 +27,23 @@
 
 .offers_item__woman {
   background-image: url(../img/offers-women.png);
+  background-size: cover;
 }
 
 .offers_item__man {
   background-image: url(../img/offer-men.jpg);
+  background-size: cover;
 }
 
 .offers_item__kids {
   background-image: url(../img/offers-kids.jpg);
+  background-size: cover;
 }
 
 .offers_item__accesories {
   background-image: url(../img/offers-accesories.jpg);
   width: 100%;
+  min-height: 181px;
 }
 
 .offers_title {
