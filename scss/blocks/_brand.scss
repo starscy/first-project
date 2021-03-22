@@ -12,11 +12,6 @@
     width: 50%;
     height: auto;
 
-    @include tablet {
-      width: 385px;
-      height: 370px;
-    }
-
     @include mobile {
       display: none;
     }
@@ -24,23 +19,27 @@
 }
 
 .brand_title-wrapper {
-  padding: 0 0 0 40px;
   background-color: $pink;
   flex-grow: 1;
   display: flex;
   align-items: center;
+  flex-direction: column;
+  padding-top: 10%;
 
   @include mobile {
     min-height: 363px;
   }
 }
 
+.brand_title-block {
+  border-left: 12px solid $dark-pink;
+  padding: 0 0 0 16px;
+}
+
 .brand_title {
   @include font(48px, 58px, 900, normal);
   text-transform: uppercase;
   color: #222222;
-  border-left: 12px solid $dark-pink;
-  padding: 0 0 0 16px;
 
   @include tablet {
     @include font(44px, 53px, 900);

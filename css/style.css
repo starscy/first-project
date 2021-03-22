@@ -302,7 +302,7 @@ a {
 }
 
 .logo:hover {
-  transform: scale(1.2);
+  transform: rotate(360deg);
 }
 
 .header_controls {
@@ -360,13 +360,6 @@ a {
   height: auto;
 }
 
-@media (max-width: 768px) {
-  .brand .brand_img {
-    width: 385px;
-    height: 370px;
-  }
-}
-
 @media (max-width: 375px) {
   .brand .brand_img {
     display: none;
@@ -374,17 +367,23 @@ a {
 }
 
 .brand_title-wrapper {
-  padding: 0 0 0 40px;
   background-color: #f1e4e6;
   flex-grow: 1;
   display: flex;
   align-items: center;
+  flex-direction: column;
+  padding-top: 10%;
 }
 
 @media (max-width: 375px) {
   .brand_title-wrapper {
     min-height: 363px;
   }
+}
+
+.brand_title-block {
+  border-left: 12px solid #f16d7f;
+  padding: 0 0 0 16px;
 }
 
 .brand_title {
@@ -394,8 +393,6 @@ a {
   font-style: normal;
   text-transform: uppercase;
   color: #222222;
-  border-left: 12px solid #f16d7f;
-  padding: 0 0 0 16px;
 }
 
 @media (max-width: 768px) {
@@ -536,6 +533,7 @@ a {
   background-image: url(../img/offers-accesories.jpg);
   width: 100%;
   min-height: 181px;
+  background-size: cover;
 }
 
 .offers_title {
@@ -692,11 +690,14 @@ a {
 
 .attract {
   background-color: #222224;
+  min-height: 340px;
 }
 
 .attract_list {
   display: flex;
   justify-content: center;
+  min-height: 340px;
+  align-items: center;
 }
 
 @media (max-width: 768px) {
@@ -707,13 +708,19 @@ a {
 }
 
 .attract_item {
-  width: 360px;
-  height: 134px;
+  width: 30%;
+  min-height: 134px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 100px 2px;
+  padding: 10px 2px;
+}
+
+@media (max-width: 768px) {
+  .attract_item {
+    width: 90%;
+  }
 }
 
 .attract_title {
@@ -863,7 +870,7 @@ a {
   cursor: pointer;
 }
 
-.footer {
+.footer__copyright {
   background-color: var(--dark-blue);
   min-height: 80px;
   display: flex;
@@ -872,7 +879,7 @@ a {
 }
 
 @media (max-width: 375px) {
-  .footer {
+  .footer__copyright {
     flex-direction: column-reverse;
     padding: 43px 0 9px 0;
   }
@@ -1079,6 +1086,10 @@ a {
   align-self: baseline;
 }
 
+.close:hover {
+  transform: scale(1.1);
+}
+
 .cart_card {
   display: flex;
   margin-bottom: 40px;
@@ -1143,6 +1154,11 @@ a {
   background-color: #fbfbfb;
   color: #222224;
   text-decoration: none;
+}
+
+.cart_button:hover {
+  background-color: #f16d7f;
+  color: #fbfbfb;
 }
 
 .buttons {
@@ -1210,6 +1226,11 @@ a {
 .registration_button__width {
   width: 100%;
   padding: 12px 0px 12px 12px;
+}
+
+.registration_button__width:hover {
+  background-color: #fbfbfb;
+  color: #f16d7f;
 }
 
 .cart_price {
