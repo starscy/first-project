@@ -1,10 +1,13 @@
 .attract {
   background-color: $black;
+  min-height: 340px;
 }
 
 .attract_list {
   display: flex;
   justify-content: center;
+  min-height: 340px;
+  align-items: center;
 
   @include tablet {
     flex-direction: column;
@@ -13,13 +16,17 @@
 }
 
 .attract_item {
-  width: 360px;
-  height: 134px;
+  width: 30%;
+  min-height: 134px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 100px 2px;
+  padding: 10px 2px;
+
+  @include tablet {
+    width: 90%;
+  }
 }
 
 .attract_title {

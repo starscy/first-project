@@ -8,7 +8,6 @@
 @import "./blocks/offers";
 @import "./blocks/products";
 @import "./blocks/_attract";
-//@import "./_bootstrap";
 
 .container {
   width: 71%;
@@ -137,7 +136,7 @@
   cursor: pointer;
 }
 
-.footer {
+.footer__copyright {
   background-color: var(--dark-blue);
   min-height: 80px;
   display: flex;
@@ -341,6 +340,10 @@
   align-self: baseline;
 }
 
+.close:hover {
+  transform: scale(1.1);
+}
+
 .cart_card {
   display: flex;
   margin-bottom: 40px;
@@ -406,6 +409,11 @@
   text-decoration: none;
 }
 
+.cart_button:hover {
+  background-color: $dark-pink;
+  color: $white;
+}
+
 .buttons {
   display: flex;
   justify-content: space-between;
@@ -464,6 +472,11 @@
 .registration_button__width {
   width: 100%;
   padding: 12px 0px 12px 12px;
+}
+
+.registration_button__width:hover {
+  background-color: $white;
+  color: $dark-pink;
 }
 
 .cart_price {
