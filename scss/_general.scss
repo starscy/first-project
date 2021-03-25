@@ -1,5 +1,5 @@
 body {
-  font-family: Lato;
+  font-family: Lato, Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: normal;
 }
@@ -27,4 +27,8 @@ a {
 
 .red {
   color: #f16d7f;
+}
+
+.flex {
+  display: flex;
 }

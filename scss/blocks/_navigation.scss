@@ -1,5 +1,4 @@
 .navigation {
-  
   position: relative;
   background-color: #ffffff;
   display: flex;
@@ -10,13 +9,13 @@
   display: none;
 }
 
-.navigation_close {
+.navigation__close {
   border: none;
   background-color: var(--white);
   align-self: flex-end;
 }
 
-.navigation_title {
+.navigation__title {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 14px;
@@ -24,17 +23,17 @@
   margin: 0 0 24px 0;
 }
 
-.navigation_text {
+.navigation__text {
   font-size: 14px;
   line-height: 17px;
   color: #6f6e6e;
   margin: 10px 11px;
 }
 
-.navigation_text:hover {
+.navigation__text:hover {
   color: var(--dark-pink);
 }
 
-.navigation_list + .navigation_list {
+.navigation__list + .navigation__list {
   margin: 20px 0 0 0;
 }

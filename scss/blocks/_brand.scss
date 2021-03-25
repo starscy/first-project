@@ -8,7 +8,7 @@
     margin: 0 0 19px 0;
   }
 
-  .brand_img {
+  .brand__img {
     width: 50%;
     height: auto;
 
@@ -18,7 +18,7 @@
   }
 }
 
-.brand_title-wrapper {
+.brand__title-wrapper {
   background-color: $pink;
   flex-grow: 1;
   display: flex;
@@ -31,12 +31,12 @@
   }
 }
 
-.brand_title-block {
+.brand__title-block {
   border-left: 12px solid $dark-pink;
   padding: 0 0 0 16px;
 }
 
-.brand_title {
+.brand__title {
   @include font(48px, 58px, 900, normal);
   text-transform: uppercase;
   color: #222222;
@@ -50,7 +50,7 @@
   }
 }
 
-.brand_subtitle {
+.brand__subtitle {
   @include font(32px, 38px, 700, normal);
   display: block;
 
@@ -63,6 +63,6 @@
   }
 }
 
-.brand_subtitle__pink {
+.brand__subtitle_pink {
   color: $dark-pink;
 }
