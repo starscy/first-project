@@ -3,7 +3,7 @@
   min-height: 340px;
 }
 
-.attract_list {
+.attract__list {
   display: flex;
   justify-content: center;
   min-height: 340px;
@@ -15,7 +15,7 @@
   }
 }
 
-.attract_item {
+.attract__item {
   width: 30%;
   min-height: 134px;
   display: flex;
@@ -29,13 +29,13 @@
   }
 }
 
-.attract_title {
+.attract__title {
   font-size: 19.96px;
   line-height: 24px;
   color: $white;
 }
 
-.attract_text {
+.attract__text {
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
